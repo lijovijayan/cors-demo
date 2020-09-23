@@ -9,6 +9,6 @@ export class APIService {
 
     }
     requestToServer(address: string): Observable<any> {
-        return this.httpClient.get(`${address}`);
+        return this.httpClient.get(`${address}/api`);
     }
 }

@@ -4,12 +4,14 @@ const app: express.Application = express();
 const PORT = process.env.PORT || ((process.argv[2] != undefined) ? parseInt(process.argv[2]) : 3000);
 const whitelist = [
     'http://127.0.0.1:4300',
+    'http://127.0.0.1:4200',
     'http://localhost:4300',
+    'http://localhost:4200',
 ];
 const corsOptions: CorsOptions = {
     origin: function (origin: any, callback) {
         console.log(origin);
-        if ( !origin || whitelist.indexOf(origin) !== -1) {
+        if (!origin || whitelist.indexOf(origin) !== -1) {
             callback(null, true)
         } else {
             callback(new Error('Not allowed by CORS'))

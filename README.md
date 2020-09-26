@@ -25,4 +25,4 @@ Because UI(Angular) is hosted on primary server.
 
 # this becomes a security issue?
 
-Refer: https://stackoverflow.com/questions/12001269/what-are-the-security-risks-of-setting-access-control-allow-origin#:~:text=However to secure against attacks,Control-Allow-Origin header 
+Refer: https://stackoverflow.com/questions/12001269/what-are-the-security-risks-of-setting-access-control-allow-origin#:~:text=However

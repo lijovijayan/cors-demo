@@ -4,8 +4,8 @@
 
 Cross-origin resource sharing is a mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served. 
 
-primary-server(UI) -> primary-server(BACKEND) (same origin))
-primary-server(UI) -> remote-server(BACKEND) (cross origin))
+origin-server(UI) -> origin-server(BACKEND) (same origin))
+origin-server(UI) -> remote-server(BACKEND) (cross origin))
 
 
 # What will be happen if call a remote-server REST API from primary-server?
@@ -17,7 +17,7 @@ We can implement CORS on remote servers and allow access from Browser(UI).
 
 # How can we do it?
 
-Add a CORS middleware on remote-server and bypass API calls by adding configurations.(add primary server's IP address in CORS configuration)
+Add a CORS middleware on remote-server and bypass API calls by adding configurations.(add origin server's IP address in CORS configuration)
 
 # why adding primary-server's IP in CORS configuration. 
 
